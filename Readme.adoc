@@ -1,0 +1,6 @@
+= HasResult
+François Lamboley <fload@me.com>
+
+A simple protocol package that does nothing.
+The `HasResult` protocol has a simple `result` property and a `ResultType` associated type.
+This is mostly useful for `Operation` (the operation has a result type which can be retrieved when the operation is done).
