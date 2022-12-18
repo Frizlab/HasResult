@@ -2,9 +2,11 @@ import Foundation
 
 
 
-public protocol HasResult {
+public protocol HasResult<Success, Failure> {
 	
-	associatedtype ResultType
-	var result: Result<ResultType, Error> {get}
+	associatedtype Success
+	associatedtype Failure : Error
+	
+	var result: Result<Success, Failure> {get}
 	
 }
